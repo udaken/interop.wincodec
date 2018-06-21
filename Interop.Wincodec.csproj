@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{91D3FB7B-8505-4901-9492-5C64E74464CB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Interop.Wincodec</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WIC\CLSID.cs" />
+    <Compile Include="WIC\DXGI_FORMAT.cs" />
+    <Compile Include="WIC\DXGI_JPEG_AC_HUFFMAN_TABLE.cs" />
+    <Compile Include="WIC\DXGI_JPEG_DC_HUFFMAN_TABLE.cs" />
+    <Compile Include="WIC\DXGI_JPEG_QUANTIZATION_TABLE.cs" />
+    <Compile Include="WIC\GUID.cs" />
+    <Compile Include="WIC\IEnumSTATSTG.cs" />
+    <Compile Include="WIC\IEnumUnknown.cs" />
+    <Compile Include="WIC\IErrorLog.cs" />
+    <Compile Include="WIC\IPropertyBag2.cs" />
+    <Compile Include="WIC\IStorage.cs" />
+    <Compile Include="WIC\IWICBitmap.cs" />
+    <Compile Include="WIC\IWICBitmapClipper.cs" />
+    <Compile Include="WIC\IWICBitmapCodecInfo.cs" />
+    <Compile Include="WIC\IWICBitmapCodecProgressNotification.cs" />
+    <Compile Include="WIC\IWICBitmapDecoder.cs" />
+    <Compile Include="WIC\IWICBitmapDecoderInfo.cs" />
+    <Compile Include="WIC\IWICBitmapEncoder.cs" />
+    <Compile Include="WIC\IWICBitmapEncoderInfo.cs" />
+    <Compile Include="WIC\IWICBitmapFlipRotator.cs" />
+    <Compile Include="WIC\IWICBitmapFrameDecode.cs" />
+    <Compile Include="WIC\IWICBitmapFrameEncode.cs" />
+    <Compile Include="WIC\IWICBitmapLock.cs" />
+    <Compile Include="WIC\IWICBitmapScaler.cs" />
+    <Compile Include="WIC\IWICBitmapSource.cs" />
+    <Compile Include="WIC\IWICBitmapSourceTransform.cs" />
+    <Compile Include="WIC\IWICColorContext.cs" />
+    <Compile Include="WIC\IWICColorTransform.cs" />
+    <Compile Include="WIC\IWICComponentInfo.cs" />
+    <Compile Include="WIC\IWICDdsDecoder.cs" />
+    <Compile Include="WIC\IWICDdsEncoder.cs" />
+    <Compile Include="WIC\IWICDdsFrameDecode.cs" />
+    <Compile Include="WIC\IWICDevelopRaw.cs" />
+    <Compile Include="WIC\IWICDevelopRawNotificationCallback.cs" />
+    <Compile Include="WIC\IWICEnumMetadataItem.cs" />
+    <Compile Include="WIC\IWICFastMetadataEncoder.cs" />
+    <Compile Include="WIC\IWICFormatConverter.cs" />
+    <Compile Include="WIC\IWICFormatConverterInfo.cs" />
+    <Compile Include="WIC\IWICImageEncoder.cs" />
+    <Compile Include="WIC\IWICImagingFactory.cs" />
+    <Compile Include="WIC\IWICImagingFactory2.cs" />
+    <Compile Include="WIC\IWICJpegFrameDecode.cs" />
+    <Compile Include="WIC\IWICJpegFrameDecode_Constants.cs" />
+    <Compile Include="WIC\IWICJpegFrameEncode.cs" />
+    <Compile Include="WIC\IWICMetadataQueryReader.cs" />
+    <Compile Include="WIC\IWICMetadataQueryWriter.cs" />
+    <Compile Include="WIC\IWICPalette.cs" />
+    <Compile Include="WIC\IWICPixelFormatInfo.cs" />
+    <Compile Include="WIC\IWICPixelFormatInfo2.cs" />
+    <Compile Include="WIC\IWICPlanarBitmapFrameEncode.cs" />
+    <Compile Include="WIC\IWICPlanarBitmapSourceTransform.cs" />
+    <Compile Include="WIC\IWICPlanarFormatConverter.cs" />
+    <Compile Include="WIC\IWICProgressCallback.cs" />
+    <Compile Include="WIC\IWICProgressiveLevelControl.cs" />
+    <Compile Include="WIC\IWICStream.cs" />
+    <Compile Include="WIC\PROPBAG2.cs" />
+    <Compile Include="WIC\PROPVARIANT.cs" />
+    <Compile Include="WIC\Windowscodecs.cs" />
+    <Compile Include="WIC\WIC8BIMIptcDigestProperties.cs" />
+    <Compile Include="WIC\WIC8BIMIptcProperties.cs" />
+    <Compile Include="WIC\WIC8BIMResolutionInfoProperties.cs" />
+    <Compile Include="WIC\WICBitmapAlphaChannelOption.cs" />
+    <Compile Include="WIC\WICBitmapCreateCacheOption.cs" />
+    <Compile Include="WIC\WICBitmapDecoderCapabilities.cs" />
+    <Compile Include="WIC\WICBitmapDitherType.cs" />
+    <Compile Include="WIC\WICBitmapEncoderCacheOption.cs" />
+    <Compile Include="WIC\WICBitmapInterpolationMode.cs" />
+    <Compile Include="WIC\WICBitmapLockFlags.cs" />
+    <Compile Include="WIC\WICBitmapPaletteType.cs" />
+    <Compile Include="WIC\WICBitmapPattern.cs" />
+    <Compile Include="WIC\WICBitmapPlane.cs" />
+    <Compile Include="WIC\WICBitmapPlaneDescription.cs" />
+    <Compile Include="WIC\WICBitmapTransformOptions.cs" />
+    <Compile Include="WIC\WICColorContextType.cs" />
+    <Compile Include="WIC\WICComponentEnumerateOptions.cs" />
+    <Compile Include="WIC\WICComponentSigning.cs" />
+    <Compile Include="WIC\WICComponentType.cs" />
+    <Compile Include="WIC\WICDdsAlphaMode.cs" />
+    <Compile Include="WIC\WICDdsDimension.cs" />
+    <Compile Include="WIC\WICDdsFormatInfo.cs" />
+    <Compile Include="WIC\WICDdsParameters.cs" />
+    <Compile Include="WIC\WICDecodeOptions.cs" />
+    <Compile Include="WIC\WICImagingFactoryClass.cs" />
+    <Compile Include="WIC\WICGifApplicationExtensionProperties.cs" />
+    <Compile Include="WIC\WICGifCommentExtensionProperties.cs" />
+    <Compile Include="WIC\WICGifGraphicControlExtensionProperties.cs" />
+    <Compile Include="WIC\WICGifImageDescriptorProperties.cs" />
+    <Compile Include="WIC\WICGifLogicalScreenDescriptorProperties.cs" />
+    <Compile Include="WIC\WICImageParameters.cs" />
+    <Compile Include="WIC\WICJpegChrominanceProperties.cs" />
+    <Compile Include="WIC\WICJpegCommentProperties.cs" />
+    <Compile Include="WIC\WICJpegFrameHeader.cs" />
+    <Compile Include="WIC\WICJpegIndexingOptions.cs" />
+    <Compile Include="WIC\WICJpegLuminanceProperties.cs" />
+    <Compile Include="WIC\WICJpegScanHeader.cs" />
+    <Compile Include="WIC\WICJpegScanType.cs" />
+    <Compile Include="WIC\WICJpegTransferMatrix.cs" />
+    <Compile Include="WIC\WICJpegYCrCbSubsamplingOption.cs" />
+    <Compile Include="WIC\WICNamedWhitePoint.cs" />
+    <Compile Include="WIC\WICPixelFormatNumericRepresentation.cs" />
+    <Compile Include="WIC\WICPlanarOptions.cs" />
+    <Compile Include="WIC\WICPngBkgdProperties.cs" />
+    <Compile Include="WIC\WICPngChrmProperties.cs" />
+    <Compile Include="WIC\WICPngFilterOption.cs" />
+    <Compile Include="WIC\WICPngGamaProperties.cs" />
+    <Compile Include="WIC\WICPngHistProperties.cs" />
+    <Compile Include="WIC\WICPngIccpProperties.cs" />
+    <Compile Include="WIC\WICPngItxtProperties.cs" />
+    <Compile Include="WIC\WICPngSrgbProperties.cs" />
+    <Compile Include="WIC\WICPngTimeProperties.cs" />
+    <Compile Include="WIC\WICProgressNotification.cs" />
+    <Compile Include="WIC\WICProgressOperation.cs" />
+    <Compile Include="WIC\WICRawCapabilities.cs" />
+    <Compile Include="WIC\WICRawCapabilitiesInfo.cs" />
+    <Compile Include="WIC\WICRawParameterSet.cs" />
+    <Compile Include="WIC\WICRawRenderMode.cs" />
+    <Compile Include="WIC\WICRawRotationCapabilities.cs" />
+    <Compile Include="WIC\WICRawToneCurve.cs" />
+    <Compile Include="WIC\WICRawToneCurvePoint.cs" />
+    <Compile Include="WIC\WICRect.cs" />
+    <Compile Include="WIC\WICSectionAccessLevel.cs" />
+    <Compile Include="WIC\WICTiffCompressionOption.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
