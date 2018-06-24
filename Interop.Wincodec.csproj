@@ -34,6 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WIC\STATFLAG.cs" />
+    <Compile Include="WIC\STGM.cs" />
+    <Compile Include="WIC\STGC.cs" />
     <Compile Include="WIC\CLSID.cs" />
     <Compile Include="WIC\DXGI_FORMAT.cs" />
     <Compile Include="WIC\DXGI_JPEG_AC_HUFFMAN_TABLE.cs" />
